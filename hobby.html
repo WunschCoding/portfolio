@@ -20,26 +20,24 @@
         background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
       }
       h1 {
-        font-size: 44px;
         text-align: center;
       }
       h2 {
         text-align: center;
         margin-top: 10px;
-        font-size: 36px;
       }
-      button {
+      .theme-button {
         display: block;
         margin: 10px auto;
         border: 1px solid blanchedalmond;
-        box-shadow: 3px 3px 20px rgba(1, 1, 1, 0.6);
+        box-shadow: 3px 3px 20px rgba(1, 1, 1, 0.2);
         padding: 10px 30px;
         border-radius: 10px;
         background: white;
         font-size: 24px;
         transition: all 200ms ease-in-out;
       }
-      button:hover {
+      .theme-button:hover {
         background: skyblue;
         cursor: pointer;
         border: 1px solid darkslateblue;
@@ -115,13 +113,13 @@
         background: black;
         color: white;
       }
-      .dark button {
+      .dark theme-button {
         border: 1px solid darkslateblue;
         background: blanchedalmond;
         color: black;
         box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.6);
       }
-      .dark button:hover {
+      .dark theme-button:hover {
         background: black;
         color: blanchedalmond;
         border: 1px solid blanchedalmond;
@@ -135,7 +133,10 @@
     <button class="theme-button">Dark theme</button>
 
     <div class="main-container">
-      <h1>Additive Manufacturing / 3D printing</h1>
+      <h1>
+        Additive Manufacturing /<br />
+        3D printing
+      </h1>
       <h2>Turning ideas into reality</h2>
       <a href="https://en.wikipedia.org/wiki/3D_printing" target="_blank">
         <img
@@ -188,16 +189,16 @@
         let body = document.querySelector("body");
         if (body.classList.contains("dark")) {
           body.classList.remove("dark");
-          let buttonDarkTheme = document.querySelector("button");
+          let buttonDarkTheme = document.querySelector(".theme-button");
           buttonDarkTheme.innerHTML = "Dark theme";
         } else {
           body.classList.add("dark");
-          let buttonDarkTheme = document.querySelector("button");
+          let buttonDarkTheme = document.querySelector(".theme-button");
           buttonDarkTheme.innerHTML = "Light theme";
         }
       }
 
-      let buttonDarkTheme = document.querySelector("button");
+      let buttonDarkTheme = document.querySelector(".theme-button");
       buttonDarkTheme.addEventListener("click", changeTheme);
     </script>
 
