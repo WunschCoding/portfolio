@@ -7,6 +7,7 @@
 body {
   margin: 100px auto;
   max-width: 800px;
+  background: #f9f7ff;
 }
 
 h1,
@@ -34,6 +35,9 @@ p {
 }
 a:hover {
   color: #0a58ca;
+}
+img {
+  display: inline-block;
 }
 
 .navigation-links {
@@ -96,4 +100,12 @@ a:hover {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+.footer-placeholder {
+  border-top: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  margin: 15px 30px 0;
+
+  font-size: 12px;
 }

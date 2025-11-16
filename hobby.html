@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobby 3D Printing - wunschcoding.at</title>
+    <meta name="description" content="My hobby: 3D printing" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+
+    <style>
+      body {
+        background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+      }
+      h1 {
+        font-size: 44px;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 36px;
+      }
+      button {
+        display: block;
+        margin: 10px auto;
+        border: 1px solid blanchedalmond;
+        box-shadow: 3px 3px 20px rgba(1, 1, 1, 0.6);
+        padding: 10px 30px;
+        border-radius: 10px;
+        background: white;
+        font-size: 24px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: skyblue;
+        cursor: pointer;
+        border: 1px solid darkslateblue;
+      }
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: 5px;
+      }
+
+      .main-container {
+        max-width: 800px;
+        background: white;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 10px;
+      }
+      .theme-button {
+        font-size: 10px;
+        background: black;
+        color: white;
+        padding: 5px 8px;
+        border-radius: 6px;
+      }
+      .theme-button:hover {
+        background: white;
+        color: black;
+      }
+      .link-wiki {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        margin-top: 20px;
+      }
+      .ThreeD-print-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .ThreeD-print-intro-picture:hover {
+        transform: scale(1.2);
+        filter: contrast(75%);
+      }
+
+      .dark {
+        background: radial-gradient(
+          circle at 74.2% 50.9%,
+          rgb(14, 72, 222) 5.2%,
+          rgb(3, 22, 65) 75.3%
+        );
+        color: white;
+      }
+      .dark .main-container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: plum;
+      }
+      .dark .theme-button {
+        background: white;
+        color: black;
+      }
+      .dark .theme-button:hover {
+        background: black;
+        color: white;
+      }
+      .dark button {
+        border: 1px solid darkslateblue;
+        background: blanchedalmond;
+        color: black;
+        box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.6);
+      }
+      .dark button:hover {
+        background: black;
+        color: blanchedalmond;
+        border: 1px solid blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-placeholder"></div>
+    </header>
+    <button class="theme-button">Dark theme</button>
+
+    <div class="main-container">
+      <h1>Additive Manufacturing / 3D printing</h1>
+      <h2>Turning ideas into reality</h2>
+      <a href="https://en.wikipedia.org/wiki/3D_printing" target="_blank">
+        <img
+          src="images/A1.png"
+          alt="3D printer"
+          class="ThreeD-print-intro-picture"
+        />
+      </a>
+      <div class="grid">
+        <a href="https://decoratedifferently.etsy.com/" target="_blank">
+          <img
+            src="images/1.png"
+            alt="Bathroom for Barbie / fashion dolls 3D-printed"
+            class="ThreeD-print-intro-picture"
+          />
+        </a>
+        <a href="https://decoratedifferently.com/" target="_blank">
+          <img
+            src="images/2.png"
+            alt="Fidget Clicker for ADHS 3D-printed"
+            class="ThreeD-print-intro-picture"
+          />
+        </a>
+
+        <img src="images/3.png" alt="Icedragon 3D-printed" />
+        <img src="images/4.png" alt="Icefox 3D-printed" />
+      </div>
+      <p>
+        3D printing, or additive manufacturing, is the construction of a
+        three-dimensional object from a CAD model or a digital 3D model. It can
+        be done in a variety of processes in which material is deposited, joined
+        or solidified under computer control, with the material being added
+        together (such as plastics, liquids or powder grains being fused),
+        typically layer by layer.
+      </p>
+      <a
+        class="link-wiki"
+        href="https://en.wikipedia.org/wiki/3D_printing"
+        target="_blank"
+        >📖 Read more on Wikipedia</a
+      >
+      <button>Learn additive manufacturing</button>
+
+      <footer>
+        <div class="footer-placeholder"></div>
+      </footer>
+    </div>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+          let buttonDarkTheme = document.querySelector("button");
+          buttonDarkTheme.innerHTML = "Dark theme";
+        } else {
+          body.classList.add("dark");
+          let buttonDarkTheme = document.querySelector("button");
+          buttonDarkTheme.innerHTML = "Light theme";
+        }
+      }
+
+      let buttonDarkTheme = document.querySelector("button");
+      buttonDarkTheme.addEventListener("click", changeTheme);
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomeranian dogs 🐕</title>
+    <style>
+      h1 {
+        font-size: 54px;
+        text-align: center;
+        margin: 10px 0;
+        color: #424874;
+      }
+      h2 {
+        text-align: center;
+        margin: 0;
+        color: #424874;
+        font-weight: 800;
+      }
+      img {
+        display: block;
+        width: 95%;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+      button {
+        display: block;
+        padding: 15px 30px;
+        margin: 15px auto;
+        font-size: 20px;
+        color: #f4eeff;
+        background: #a6b1e1;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(1, 1, 1, 0.3);
+        transition: all 250ms ease-in-out;
+      }
+      button:hover {
+        color: #a6b1e1;
+        background: #f4eeff;
+        cursor: pointer;
+      }
+      p {
+        line-height: 1.3;
+        margin: 10px;
+        color: #424874;
+      }
+      .site {
+        max-width: 750px;
+        margin: 0 auto;
+        background: linear-gradient(
+          106.5deg,
+          rgba(255, 215, 185, 0.91) 23%,
+          rgba(223, 159, 247, 0.75) 93%
+        );
+      }
+      .wiki-link {
+        color: #424874;
+        margin: 10px 0;
+        font-size: 14px;
+        text-decoration: none;
+        transition: all 150ms ease-in-out;
+      }
+      .wiki-link:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .footer {
+        color: #424874;
+        text-align: center;
+        margin: 10px 0;
+      }
+      .coder-link {
+        color: #424874;
+        text-decoration: none;
+        transition: all 150ms ease-in-out;
+      }
+      .coder-link:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .coder-name {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site">
+      <h1>I ❤️♥️</h1>
+      <h2>Pomeranian dogs - German Spitz</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/680/original/Pomeranian-dog.jpg?1757781215"
+        alt="Pomeranian dog German Spitz"
+      />
+      <hr />
+      <p>
+        The Pomeranian (also known as a Pom, Pommy or Pome) is a breed of dog of
+        the Spitz type that is named for the Pomerania region in north-west
+        Poland and north-east Germany in Central Europe. Classed as a toy dog
+        breed because of its small size, the Pomeranian is descended from larger
+        Spitz-type dogs, specifically the German Spitz. <br />The breed has been
+        made popular by a number of royal owners since the 18th century. Queen
+        Victoria owned a particularly small Pomeranian, and consequently, the
+        smaller variety became universally popular. During Victoria's lifetime
+        alone, the size of the breed decreased by half. As of 2017, in terms of
+        registration figures, since at least 1998, the breed has ranked among
+        the top fifty most popular breeds in the United States, and the current
+        fashion for small dogs has increased their popularity worldwide.
+      </p>
+      <p>
+        <a
+          class="wiki-link"
+          href="https://en.wikipedia.org/wiki/Pomeranian_dog"
+          target="_blank"
+          >Learn more on Wikipedia</a
+        >
+      </p>
+      <button><strong>Feed a Pomeranian</strong></button>
+      <p class="footer">
+        <em
+          >Coded by
+          <a
+            class="coder-link"
+            href="https://www.wunschcoding.at"
+            target="_blank"
+            ><span class="coder-name">Michaela Wunsch</span></a
+          ></em
+        >
+      </p>
+    </div>
+    <script>
+      function feedingPomeranian() {
+        let strFirstName = prompt("What is your first name?");
+        let intNumberTreats = prompt("How many treats would you like to feed?");
+        let strHappiness = checkHappiness(intNumberTreats);
+        alert(strHappiness + strFirstName);
+      }
+
+      function checkHappiness(intNumberTreats) {
+        if (intNumberTreats < 1) {
+          return "😞 that makes me very sad, ";
+        } else if (intNumberTreats >= 1 && intNumberTreats <= 3) {
+          return "🙂 woof woof, thank you very much, ";
+        } else if (intNumberTreats > 3) {
+          return "😵 Please don't overfeed, ";
+        } else {
+          return "😋 I'm still so hungry, please give me more ";
+        }
+      }
+
+      let btnFeedAPomeranian = document.querySelector("button");
+      btnFeedAPomeranian.addEventListener("click", feedingPomeranian);
+    </script>
+  </body>
+</html>

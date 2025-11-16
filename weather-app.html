@@ -3,8 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Aplication</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <title>Weather Aplication - wunschcoding.at</title>
+    <meta name="description" content="weather application with forecast" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/weather.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +23,8 @@
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
+    <div class="header-placeholder"></div>
+
     <div class="weather-app">
       <header>
         <h1>Welcome to my weather application</h1>
@@ -71,30 +82,16 @@
         <div class="weather-app-forecast" id="forecast"></div>
       </main>
       <footer>
-        This project was coded by
-        <a
-          href="https://github.com/WunschCoding"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Michaela Wunsch</a
-        >, is
-        <a
-          href="https://github.com/WunschCoding/Wetter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          open-sourced on GitHub</a
-        >
-        and
-        <a
-          href="https://wetter-application-mwu.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          hosted on Netlify</a
-        >.
+        <div class="footer-placeholder"></div>
       </footer>
     </div>
-    <script src="src/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="src/weather.js"></script>
+    <script src="src/main.js"></script>
   </body>
 </html>
