@@ -23,7 +23,7 @@ function updateCities(event) {
         )}</div>
     </div>
     <div>
-    <a href="index.html" target="" rel="noopener noreferrer">
+    <a href="/world-clock.html" target="" rel="noopener noreferrer">
         Back to all cities</a
       ></div>
   `;
