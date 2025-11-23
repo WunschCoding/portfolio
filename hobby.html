@@ -14,171 +14,94 @@
     />
 
     <link rel="stylesheet" href="src/style.css" />
-
-    <style>
-      body {
-        background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-      }
-      h1 {
-        text-align: center;
-      }
-      h2 {
-        text-align: center;
-        margin-top: 10px;
-      }
-      .theme-button {
-        display: block;
-        margin: 10px auto;
-        border: 1px solid blanchedalmond;
-        box-shadow: 3px 3px 20px rgba(1, 1, 1, 0.2);
-        padding: 10px 30px;
-        border-radius: 10px;
-        background: white;
-        font-size: 24px;
-        transition: all 200ms ease-in-out;
-      }
-      .theme-button:hover {
-        background: skyblue;
-        cursor: pointer;
-        border: 1px solid darkslateblue;
-      }
-      img {
-        max-width: 100%;
-        border-radius: 10px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 1.3;
-        margin-bottom: 5px;
-      }
-
-      .main-container {
-        max-width: 800px;
-        background: white;
-        padding: 20px;
-        margin: 20px auto;
-        border-radius: 10px;
-      }
-      .theme-button {
-        font-size: 10px;
-        background: black;
-        color: white;
-        padding: 5px 8px;
-        border-radius: 6px;
-      }
-      .theme-button:hover {
-        background: white;
-        color: black;
-      }
-      .link-wiki {
-        display: block;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        font-size: 16px;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 15px;
-        margin-top: 20px;
-      }
-      .ThreeD-print-intro-picture {
-        border-radius: 10px;
-        transition: all 150ms ease-in-out;
-      }
-      .ThreeD-print-intro-picture:hover {
-        transform: scale(1.2);
-        filter: contrast(75%);
-      }
-
-      .dark {
-        background: radial-gradient(
-          circle at 74.2% 50.9%,
-          rgb(14, 72, 222) 5.2%,
-          rgb(3, 22, 65) 75.3%
-        );
-        color: white;
-      }
-      .dark .main-container {
-        background: rgba(255, 255, 255, 0.1);
-      }
-      .dark a {
-        color: plum;
-      }
-      .dark .theme-button {
-        background: white;
-        color: black;
-      }
-      .dark .theme-button:hover {
-        background: black;
-        color: white;
-      }
-      .dark theme-button {
-        border: 1px solid darkslateblue;
-        background: blanchedalmond;
-        color: black;
-        box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.6);
-      }
-      .dark theme-button:hover {
-        background: black;
-        color: blanchedalmond;
-        border: 1px solid blanchedalmond;
-      }
-    </style>
   </head>
   <body>
     <header>
       <div class="header-placeholder"></div>
     </header>
-    <button class="theme-button">Dark theme</button>
 
-    <div class="main-container">
+    <div class="first-section rounded-3">
       <h1>
         Additive Manufacturing /<br />
         3D printing
       </h1>
       <h2>Turning ideas into reality</h2>
-      <a href="https://en.wikipedia.org/wiki/3D_printing" target="_blank">
-        <img
-          src="images/A1.png"
-          alt="3D printer"
-          class="ThreeD-print-intro-picture"
-        />
-      </a>
-      <div class="grid">
-        <a href="https://decoratedifferently.etsy.com/" target="_blank">
-          <img
-            src="images/1.png"
-            alt="Bathroom for Barbie / fashion dolls 3D-printed"
-            class="ThreeD-print-intro-picture"
-          />
-        </a>
-        <a href="https://decoratedifferently.com/" target="_blank">
-          <img
-            src="images/2.png"
-            alt="Fidget Clicker for ADHS 3D-printed"
-            class="ThreeD-print-intro-picture"
-          />
-        </a>
-
-        <img src="images/3.png" alt="Icedragon 3D-printed" />
-        <img src="images/4.png" alt="Icefox 3D-printed" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-md-block">
+          <a href="https://en.wikipedia.org/wiki/3D_printing" target="_blank">
+            <img
+              src="images/A1.png"
+              alt="3D printer"
+              class="img-fluid rounded"
+            />
+          </a>
+        </div>
+        <div class="col d-flex align-items-center">
+          <div>
+            <p>
+              3D printing, or additive manufacturing, is the construction of a
+              three-dimensional object from a CAD model or a digital 3D model.
+              It can be done in a variety of processes in which material is
+              deposited, joined or solidified under computer control, with the
+              material being added together (such as plastics, liquids or powder
+              grains being fused), typically layer by layer.
+            </p>
+            <a
+              class="nav-link"
+              href="https://en.wikipedia.org/wiki/3D_printing"
+              target="_blank"
+              title="to Wikipedia - 3D-printing"
+              >📖 Read more on Wikipedia</a
+            >
+          </div>
+        </div>
       </div>
-      <p>
-        3D printing, or additive manufacturing, is the construction of a
-        three-dimensional object from a CAD model or a digital 3D model. It can
-        be done in a variety of processes in which material is deposited, joined
-        or solidified under computer control, with the material being added
-        together (such as plastics, liquids or powder grains being fused),
-        typically layer by layer.
-      </p>
-      <a
-        class="link-wiki"
-        href="https://en.wikipedia.org/wiki/3D_printing"
-        target="_blank"
-        >📖 Read more on Wikipedia</a
-      >
-      <button>Learn additive manufacturing</button>
+      <div class="row">
+        <div class="col">
+          <a
+            href="https://decoratedifferently.etsy.com/"
+            target="_blank"
+            title="to Etsy Shop Decorate Differently"
+          >
+            <img
+              src="images/1.png"
+              alt="Bathroom for Barbie / fashion dolls 3D-printed"
+              class="img-fluid rounded w-75 mx-auto d-block"
+            />
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="https://decoratedifferently.com/"
+            target="_blank"
+            title="to Shop Decorate Differently"
+          >
+            <img
+              src="images/2.png"
+              alt="Fidget Clicker for ADHS 3D-printed"
+              class="img-fluid rounded w-75 mx-auto d-block"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <img
+            src="images/3.png"
+            alt="Icedragon 3D-printed"
+            class="img-fluid rounded w-75 mx-auto d-block"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="images/4.png"
+            alt="Icefox 3D-printed"
+            class="img-fluid rounded w-75 d-flex mx-auto d-block"
+          />
+        </div>
+      </div>
 
       <footer>
         <div class="footer-placeholder"></div>
