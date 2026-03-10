@@ -39,7 +39,12 @@ a {
   font-size: 16px;
   margin-left: 5px;
   border-radius: 6px;
+  box-shadow: var(--box-shadow);
+
   color: white;
+}
+.search-button:hover {
+  color: var(--link-hover-color);
 }
 .weather-app-data {
   display: flex;

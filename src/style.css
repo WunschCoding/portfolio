@@ -1,10 +1,12 @@
 :root {
+  --link-color: white;
   --link-background-color: #6c63ff;
   --secondary-color: #f5f7fe;
   --background-color: #f9f7fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Roboto", sans-serif;
+  --link-hover-color: #0a58ca;
 }
 
 body {
@@ -76,7 +78,7 @@ footer {
 .contact-link {
   background: var(--link-background-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--link-color);
 }
 
 .homepage-link {
@@ -113,7 +115,7 @@ footer {
   text-transform: capitalize;
   background: var(--link-background-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--link-color);
 }
 .footer-placeholder {
   border-top: 1px solid black;
